@@ -6,3 +6,5 @@
 <h5>3 - Array Manipulation</h5>
 <h5>4 - Hash table ransom notes</h5>
 <h5>5 - Profit  Maximization</h5>
+<h5>6 - Jump on the Cloud</h5>
+<h5>7 - Repeated Strings</h5>
