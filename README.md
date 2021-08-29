@@ -1,4 +1,4 @@
-# 100DaysofCode
+# 10Days 10Code
 100 Days coding Journey</br>
 All questions available in hackerrank interview preperation kit
 <h5>1 - New Year Chaos</h5>
