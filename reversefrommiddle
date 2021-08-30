@@ -1,0 +1,38 @@
+import java.util.Scanner;
+import java.util.regex.*;
+public class HelloWorld{
+  public static void main (String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the string");
+    String str = sc.nextLine();
+    Pattern pat = Pattern.compile("[a-zA-Z]+");
+    Matcher mat = pat.matcher(str);
+    if(mat.matches()){
+      if(str.length()<2 || str.length()>20){
+        System.out.println("Invalid");
+      }
+      else{
+        int sum=0;
+        char[] c = str.toCharArray();
+        for(int i=0;i<c.length;i++){
+          sum=sum+(int)c[i];
+        }
+        StringBuilder sb = new StringBuilder(str);
+        System.out.println(sum);
+        if(sum%2==0){
+          System.out.println(sb.reverse());
+        }
+        else{
+          String s=" ";
+          int mid = str.length()/2;
+          for(int i=mid-1;i>=0;i--)
+            s+=c[i];
+          for(int i=mid;i<str.length();i++)
+            s=s+c[i];
+            System.out.println(s);
+        }
+      }
+    }
+  else  System.out.println("Invalid");
+  }
+}
